@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quarto-Dirs on EDA on Covid19 Pandemic</title>
+    <link>http://localhost:5007/quarto-dir/</link>
+    <description>Recent content in Quarto-Dirs on EDA on Covid19 Pandemic</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:5007/quarto-dir/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Custom Functions</title>
+      <link>http://localhost:5007/quarto-dir/functions/functions/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:5007/quarto-dir/functions/functions/</guid>
+      <description>&lt;h1 id=&#34;custom-eda-functions-documentation&#34;&gt;&#xD;&#xA;  Custom EDA Functions Documentation&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#custom-eda-functions-documentation&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;This page explains the purpose and usage of custom functions developed for COVID-19 exploratory data analysis in the United States.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-data-preparation-functions&#34;&gt;&#xD;&#xA;  1. Data Preparation Functions&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#1-data-preparation-functions&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;h3 id=&#34;import-necessary-libraries&#34;&gt;&#xD;&#xA;  Import Necessary Libraries:&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#import-necessary-libraries&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;details class=&#34;code-fold&#34;&gt;&#xD;&#xA;&lt;summary&gt;Code&lt;/summary&gt;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(tidyverse)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/details&gt;&#xD;&#xA;&lt;h3 id=&#34;renamestate&#34;&gt;&#xD;&#xA;  &lt;code&gt;renameState()&lt;/code&gt;&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#renamestate&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Purpose:&lt;/strong&gt; Standardizes state column naming across datasets&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Parameters:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;df&lt;/code&gt;: Input dataframe&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;br&gt;&#xA;Renames any column containing &amp;ldquo;state&amp;rdquo; in its name to &amp;ldquo;state&amp;rdquo;. Ensures consistent column naming across different datasets.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

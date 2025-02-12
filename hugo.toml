@@ -1,58 +1,56 @@
 # hugo server --minify --themesDir ../.. --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
 baseURL = 'https://example.com/'
-title = 'Hugo Book'
+languageCode = 'en-us'
+title = 'EDA on Covid19 Pandemic'
 theme = 'hugo-book'
+enableEmoji = true
+enableRobotsTXT = true
+
 
 # Book configuration
 disablePathToLower = true
 enableGitInfo = true
 
-# Needed for mermaid/katex shortcodes
-[markup]
+ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$", "\\.rmd$", "\\.html$" ]
+[markup.goldmark.parser]
+    attribute = true
 [markup.goldmark.renderer]
   unsafe = true
 
+# Needed for mermaid/katex shortcodes
+[markup]
 [markup.tableOfContents]
   startLevel = 1
 
+  
 # Multi-lingual mode config
 # There are different options to translate files
 # See https://gohugo.io/content-management/multilingual/#translation-by-filename
 # And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
-[languages]
-[languages.en]
-  languageName = 'English'
-  contentDir = 'content.en'
-  weight = 1
-
-[languages.zh]
-  languageName = 'Chinese'
-  contentDir = 'content.zh'
-  weight = 2
-
-[languages.he]
-  languageName = 'Hebrew'
-  contentDir = 'content.he'
-  languageDirection = 'rtl'
-  weight = 3
 
 [menu]
-# [[menu.before]]
-[[menu.after]]
-  name = "Github"
-  url = "https://github.com/alex-shpak/hugo-book"
-  weight = 10
+  [[menu.after]]
+    name = "Steps"
+    identifier = "steps"
+    weight = 1
 
-[[menu.after]]
-  name = "Hugo Themes"
-  url = "https://themes.gohugo.io/themes/hugo-book/"
-  weight = 20
+  [[menu.after]]
+    name = "Functions"
+    parent = "steps"
+    url = "/quarto-dir/functions"
+    weight = 2
+
+  [[menu.after]]
+    name = "Github"
+    url = "https://github.com/Sal-Fakoya"
+    weight = 10
+
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
-  BookTheme = 'light'
+  BookTheme = 'auto'
 
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
@@ -70,7 +68,7 @@ enableGitInfo = true
   # (Optional, default docs) Specify root page to render child pages as menu.
   # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
-  BookSection = 'docs'
+  BookSection = '*'
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
@@ -117,3 +115,5 @@ enableGitInfo = true
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
   BookTranslatedOnly = false
+
+

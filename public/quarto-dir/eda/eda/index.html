@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=5007&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Polar Axis
+  #
+
+For a demonstration of a line plot on a polar axis, see Figure 1.
+
+Code
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={&#39;projection&#39;: &#39;polar&#39;})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:5007/quarto-dir/eda/eda/">
+  <meta property="og:site_name" content="EDA on Covid19 Pandemic">
+  <meta property="og:title" content="Hello, Quarto">
+  <meta property="og:description" content="Polar Axis#For a demonstration of a line plot on a polar axis, see Figure 1.
+Codeimport numpy as np import matplotlib.pyplot as plt r = np.arange(0, 2, 0.01) theta = 2 * np.pi * r fig, ax = plt.subplots(subplot_kw={&#39;projection&#39;: &#39;polar&#39;}) ax.plot(theta, r) ax.set_rticks([0.5, 1, 1.5, 2]) ax.grid(True) plt.show()">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="quarto-dir">
+    <meta property="article:published_time" content="2012-04-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2012-04-06T00:00:00+00:00">
+<title>Hello, Quarto | EDA on Covid19 Pandemic</title>
+<link rel="icon" href="../../../favicon.png" >
+<link rel="manifest" href="../../../manifest.json">
+<link rel="canonical" href="http://localhost:5007/quarto-dir/eda/eda/">
+<link rel="stylesheet" href="../../../book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
+  <script defer src="../../../fuse.min.js"></script>
+  <script defer src="../../../en.search.min.19fdd0cc3c6944a2d19dd0d2fbada67fae923712b46a682e5b183932c5a9b56f.js" integrity="sha256-Gf3QzDxpRKLRndDS&#43;62mf66SNxK0amguWxg5MsWptW8=" crossorigin="anonymous"></script>
+
+  <script defer src="../../../sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="../../../"><span>EDA on Covid19 Pandemic</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href=""  target="_blank" rel="noopener">
+        Steps
+      </a>
+      
+<ul>
+  
+  <li>
+    <a href="../../../quarto-dir/data-cleaning"  target="_blank" rel="noopener">
+        Data Cleaning
+      </a>
+  </li>
+  
+  <li>
+    <a href="../../../quarto-dir/functions"  target="_blank" rel="noopener">
+        Functions
+      </a>
+  </li>
+  
+  <li>
+    <a href="../../../quarto-dir/eda"  target="_blank" rel="noopener">
+        EDA
+      </a>
+  </li>
+  
+</ul>
+
+  </li>
+  
+  <li>
+    <a href="https://github.com/Sal-Fakoya"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Hello, Quarto</h3>
+
+  <label for="toc-control">
+    
+    <img src="../../../svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#polar-axis">Polar Axis</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="polar-axis">
+  Polar Axis
+  <a class="anchor" href="#polar-axis">#</a>
+</h2>
+<p>For a demonstration of a line plot on a polar axis, see <a href="#fig-polar2" class="quarto-xref">Figure 1</a>.</p>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0.01</span>)
+</span></span><span style="display:flex;"><span>theta <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> np<span style="color:#f92672">.</span>pi <span style="color:#f92672">*</span> r
+</span></span><span style="display:flex;"><span>fig, ax <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>subplots(subplot_kw<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;projection&#39;</span>: <span style="color:#e6db74">&#39;polar&#39;</span>})
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(theta, r)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>set_rticks([<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1.5</span>, <span style="color:#ae81ff">2</span>])
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div></details>
+<img src="eda_files/figure-markdown_strict/fig-polar2-output-1.png"
+id="fig-polar2" alt="Figure 1: A line plot on a polar axis" />
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/quarto-dir/eda/eda.md" target="_blank" rel="noopener">
+      <img src="../../../svg/edit.svg" class="book-icon" alt="" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#polar-axis">Polar Axis</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

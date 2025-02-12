@@ -1,0 +1,14 @@
+# bibliography: refs.bib
+# suppress-bibliography: true
+# csl: chicago-fullnote-bibliography.csl
+
+project:
+  type: hugo
+
+format: 
+  hugo-md:
+    code-fold: true
+  
+execute: 
+  warning: false
+  freeze: auto

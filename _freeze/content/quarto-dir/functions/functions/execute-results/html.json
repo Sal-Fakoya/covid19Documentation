@@ -1,0 +1,15 @@
+{
+  "hash": "10b72e778c767cf51cbcc8c5d2b2552b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Custom Functions\ndate: \"2025-02-11\"\nformat: html\n# jupyter: python3\n---\n\n\n\n# Custom EDA Functions Documentation\n\nThis page explains the purpose and usage of custom functions developed for COVID-19 exploratory data analysis in the United States.\n\n\n## 1. Data Preparation Functions\n\n\n### Import Necessary Libraries:\n\n\n::: {.cell}\n\n:::\n\n\n\n\n### `renameState()`\n\n**Purpose:** Standardizes state column naming across datasets  \n\n**Parameters:**\n- `df`: Input dataframe \n\n**Description:**  \nRenames any column containing \"state\" in its name to \"state\". Ensures consistent column naming across different datasets.\n\n\n\n::: {.cell}\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
